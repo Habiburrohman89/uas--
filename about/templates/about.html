@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        head {
+            background-color: aqua;
+        }
+        .table, tr, th, td { 
+            border: 1px solid;
+            border-collapse: collapse;
+            
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+            <tr>
+                <th>Nama</th>
+                <th>NPM</th>
+                <th>Prodi</th>
+                <th>Tanggal Lahir</th>
+                <th>Alamat</th>
+                <th> Kode_skripsi</th>
+            </tr>
+        {% for mhs in nita %}
+            <tr>
+            <td>{{mhs.Nama}}</td>
+            <td>{{mhs.NPM}}</td>
+            <td>{{mhs.Prodi}}</td>
+            <td>{{mhs.Tanggal_lahir}}</td>
+            <td>{{mhs.Alamat}}</td>
+            <td>{{mhs. Kode_skripsi}}</td>
+            </tr>
+        {% endfor %}
+    
+   </table>
+</body>
+</html>

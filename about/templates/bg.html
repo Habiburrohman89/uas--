@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, tr, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>Skripsi</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>NPM</th>
+            <th>Judul_skripsi</th>
+            <th>Abstrak</th>
+            <th>Pembimbing</th>
+            <th>Kode_skripsi</th>
+        </tr>
+    {% for skripsi in nb %}
+        <tr>
+        <td>{{skripsi.Nama}}</td>
+        <td>{{skripsi.NPM}}</td>
+        <td>{{skripsi.Judul_skripsi}}</td>
+        <td>{{skripsi.Abstrak}}</td>
+        <td>{{skripsi.Pembimbing}}</td>
+        <td>{{skripsi.Kode_skripsi}}</td>
+        </tr>
+    {% endfor %}
+</body>
+</html>

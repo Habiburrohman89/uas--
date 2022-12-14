@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding-top: 10ch;
+            padding-bottom: 10ch;
+            padding-left: 30ch;
+            padding-right: 10ch;
+            background-color: aquamarine;
+        }
+
+        .table, tr, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>NPM</th>
+            <th>Tetala</th>
+            <th>Alamat</th>
+            <th>Kode Pos</th>
+        </tr>
+       {% for editor in wk %}
+         <tr>
+            <td>{{editor.NAMA}}</td>
+            <td>{{editor.NPM}}</td>
+            <td>{{editor.TETALA}}</td>
+            <td>{{editor.ALAMAT}}</td>
+            <td>{{editor.KODEPOS}}</td>
+         </tr>   
+       {% endfor %}
+</table>
+</body>
+</html>
